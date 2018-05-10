@@ -1,0 +1,407 @@
+/* 
+
+Project Name: Fabio DeSousa Landing Page 
+Author: Fabio DeSousa | www.twitter.com/defabio_desousa 
+
+*/
+
+body {
+  font-family: Lato, Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 50px;
+  color: #2d2d2d;
+}
+
+.jumbotron {
+  height: 500px;
+  margin-bottom: 0px;
+}
+
+
+.main-jumbo {
+  background-image: url("../img/hero.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 90%;
+}
+
+
+.thesis-jumbo {
+  background-color: #C85331;
+}
+
+.personal-site-jumbo {
+  background-color: #D0E7FA;
+}
+
+.foxtrot-jumbo {
+  background-color: #BB9C9B;
+}
+
+.atlas-jumbo {
+  background-color: #7FBBB6;
+}
+
+.todoblocks-jumbo {
+  background-color: #7659CC;
+}
+
+.remedian-jumbo {
+  background-color: #7F99AE;
+}
+
+.vfa-jumbo {
+  background-image: url("http://blog.fabiodesousa.com/wp-content/uploads/2016/07/744085EF81-e1468939232945.jpg");
+  background-color:DarkSeaGreen;
+}
+
+.plan-jumbo {
+  background-color:Lavender;
+}
+
+.commuter-jumbo {
+  background-color:CornSilk;
+}
+
+.update-jumbo {
+  background-color:AliceBlue;
+}
+
+.jumbotron h1 {
+  padding-top: 10%;
+  position: relative;
+  left: -4px;
+}
+
+.jumbotron h2 {
+  margin-top: 10px;
+}
+
+
+a {
+  color: #039f8f;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #015f55;
+  text-decoration: none;
+}
+
+/*
+a:visited {
+  color:#81cfc7;
+  text-decoration: none;
+}
+*/
+
+
+#navItems {
+
+}
+
+.navbar-fixed-top a {
+  color: #333;
+}
+
+.navbar-fixed-top li {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar-fixed-top {
+  min-height: 40px;
+  margin-bottom: 0px;
+  background-color: #fff;
+}
+
+.work {
+  padding-top: 40px;
+  margin-top: 0px;
+}
+
+
+.work-description {
+  width: 85%;
+  margin-bottom: 30px;
+}
+
+
+.work-row {
+}
+
+.current-work-header {
+  width: 100%;
+}
+
+.past-work-header {
+  width: 100%;
+}
+
+.work-example {
+  height: 250px;
+  width: 85%;
+  padding: 0px;
+  border: 0px;
+  margin-bottom: 5px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.ex-6 {
+  background-image: url('https://media.giphy.com/media/KggqUqaHd0DTy/giphy.gif');
+}
+
+.ex-5 {
+  background-image: url('https://media.giphy.com/media/ElFlf4EayfJEQ/giphy.gif');
+}
+
+.ex-4 {
+  background-image: url('https://media.giphy.com/media/GG9lNNdRcje6c/giphy.gif');
+
+}
+
+.ex-3 {
+  background-image: url('https://media.giphy.com/media/v1Ayf1Nh7oguI/giphy.gif');
+
+}
+
+.ex-2 {
+  background-image: url('https://media.giphy.com/media/ef2ILaQyW4QAU/giphy.gif');
+
+}
+
+.ex-1 {
+  background-image: url('https://media.giphy.com/media/3EJSEqco6gibK/giphy.gif');
+
+}
+
+.footer {
+  height: 100px;
+}
+
+/* Work Page styles */
+.work-info {
+  margin-top: 30px;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-info p {
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.work-info figure {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 1px; /* This can be any width, so long as it's narrower than any image */
+}
+
+
+.work-info img, figcaption {
+    display: table-row;
+}
+
+.work-info figcaption {
+  font-size: 16px;
+  color: #545151;
+  font-style: italic;
+}
+
+.plan-info {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.august {
+  background-color:ghostwhite;
+  padding-left: 5px;
+  padding-top: 1px;
+  padding-bottom: 5px;
+}
+
+.september {
+  background-color:ghostwhite;
+  padding-left: 5px;
+  padding-top: 1px;
+  padding-bottom: 5px;
+}
+
+.october {
+  background-color:ghostwhite;
+  padding-left: 5px;
+  padding-top: 1px;
+  padding-bottom: 5px;
+}
+
+.november {
+  background-color:ghostwhite;
+  padding-left: 5px;
+  padding-top: 1px;
+  padding-bottom: 5px;
+}
+
+.december {
+  background-color:ghostwhite;
+  padding-left: 5px;
+  padding-top: 1px;
+  padding-bottom: 5px;
+}
+
+/* End work page styles */
+
+@media(max-width:350px) {
+  .work-info img {
+    width: 80vw;
+  }
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  .navbar-collapse {
+    overflow-x: visible !important;
+  }
+
+  .navbar-collapse.in {
+    overflow-y: auto !important;
+  }
+
+  .collapse.in { 
+    display: block !important; 
+  }
+
+  .jumbotron h1 {
+    padding-top: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+    .main-jumbo {
+    background-position: 50%;
+  }
+
+  .work-info img {
+    max-width: 80vw;
+  }
+
+  .btn-navbar {
+      display: none;
+  }
+  .navbar .nav-collapse {
+      clear: none;
+  }
+
+  .nav-collapse {
+      height: auto;
+      overflow: auto;
+  }
+
+  .navbar .nav {
+      float: left;
+      margin: 0 10px 0 0;
+  }
+
+  .navbar .brand {
+      margin-left: -20px;
+      padding: 8px 20px 12px;
+  }
+
+  .navbar .dropdown-menu:before, .navbar .dropdown-menu:after {
+      display: block;
+  }
+
+  .navbar .nav > li > a, .navbar .dropdown-menu a {
+      border-radius: 0;
+      font-weight: normal;
+      padding: 10px 10px 11px;
+  }
+
+  .navbar .nav > li {
+      float: left;
+  }
+
+  .navbar .dropdown-menu {
+      background-clip: padding-box;
+      border-color: rgba(0, 0, 0, 0.2);
+      border-radius: 0 0 5px 5px;
+      border-style: solid;
+      border-width: 1px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      display: none;
+      float: left;
+      left: 0;
+      list-style: none outside none;
+      margin: 0;
+      min-width: 160px;
+      padding: 4px 0;
+      position: absolute;
+      top: 100%;
+      z-index: 1000;
+  }
+
+  .navbar-form, .navbar-search {
+      border:none;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1);
+      float: left;
+      margin-bottom: 0;
+      margin-top:6px;
+      padding: 9px 15px;
+  }
+
+  .navbar .nav.pull-right {
+      float: right;
+      margin-left: auto;
+  }
+
+  .work-example {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .current-ex-1 {
+    background-size: contain;
+    background-position: center;
+  }
+
+  .current-ex-2 {
+    background-size: contain;
+    background-position: center;
+  }
+
+  .ex-1 {
+    background-size: contain;
+    background-position: center;
+  }
+
+  .ex-2 {
+    background-size: contain;
+    background-position: center;
+
+  }
+
+  .ex-3 {
+    background-size: contain;
+    background-position: center;
+  }
+
+  .ex-4 {
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+
+
+

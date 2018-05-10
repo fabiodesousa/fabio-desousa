@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoBlocks</title>
+    <link rel ="stylesheet" href="../../css/font-awesome.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../css/test.css" />
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-74784461-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+
+  <body>
+    <!--navigation-->
+    <nav id="navMenu" class="navbar-fixed-top navbar-default navbar-light bg-faded" role="navigation"></nav>
+
+    <!--intro panel-->
+    <div class="jumbotron todoblocks-jumbo">
+      <div class="container">
+        <h1>ToDoBlocks</h1>
+        <h2>How can I reduce the work needed to maintain my productivity system?</h2>
+        <span>Personal Project | July 2015 – August 2015</span>
+        <br>
+        <span class="roles-skills">Python | Trello | Slack</span>
+      </div>
+    </div>
+
+
+    <!--info panel-->
+    <div class="work-info">
+      <p>ToDoBlocks is a tool I put together to reduce platform fatigue by pushing my daily to-do list check-in from Trello to Slack. While I don't currently have an in-depth write up of it, I do have the readme from <a href="https://github.com/fabiodesousa/ToDoBlocks/" target="_blank">github</a>:</p>
+
+      <h1>ToDoBlocks</h1>
+
+      <p>Time blocking to-do helper. Integrates Trello and Slack.</p>
+
+      <p>Blocking time off for specific tasks is the basic idea behind the productivity system that ToDoBlocks facilitates. The user sets up a trello board with the following lists:</p>
+      <ul>
+      <li>Incoming</li>
+      <li>Today</li>
+      <li>This Week</li>
+      <li>Later</li>
+      <li>Done</li>
+      </ul>
+
+      <h2>Minimum Viable Product</h2>
+
+      <p>Each new task for the user gets sent to Incoming. As soon as possible, the user sets a date and time for that task to get done. Once a day (or more), ToDoBlocks goes through all of the cards on the Trello board that have dates, and moves them to the appropriate list (tasks due today go into the Today list, and so on). After sorting the cards, ToDoBlocks then messages the user on Slack with the schedule for the day.</p>
+
+      <h2>Current functionality</h2>
+
+      <ul>
+      <li>Moves all tasks due today to the Today list</li>
+      <li>Messages list of tasks due today to Slack</li>
+      <li>Archive items in the "Done" list</li>
+      <li>"This Week" functionality</li>
+      <li>"Later" functionality</li>
+      </ul>
+
+      <h2>Next steps</h2>
+
+      <ul>
+      <li>Sort slack post items by time</li>
+      </ul>
+
+      <h2>On the horizon</h2>
+
+      <ul>
+      <li>Respond to the Slackbot to mark tasks as done (or send back to incoming if needs rescheduling)</li>
+      <li>Waiting On list integration (tasks that you're waiting on someone to get back to you for you to complete)</li>
+      <li>Add task to incoming (with a / command?)</li>
+      <li>Reminder message of the next task as it arrives</li>
+      </ul>
+
+      <h2>Dream features</h2>
+
+      <ul>
+      <li>Productivity buddies!</li>
+      <li>Integrate Asana as well</li>
+      </ul>
+
+      <h2>Reasoning</h2>
+
+      <p>I really enjoy using Trello (and Asana for work), but I find myself forgetting to actually use them. Productivity systems are about behavior change, and I find that I get platform fatigue even if I like all of the platforms I'm using. I figured that the productivity system I use emphasizes time blocking, which means I can get a daily report (and possibly reminders) on the one platform I'm guaranteed to be using—Slack.</p>
+      <p>With ToDoBlocks, I'll be able to look at my Trello board only once. At the end of the day, I can add to my incoming list, add dates/times to tasks, and end on the satisfying note of archiving tasks I have completed.</p>
+
+
+
+      <h3><a href="http://www.fabiodesousa.com/index.html#work">Back to my other projects.</a></h3>
+    </div>
+
+    <!--Begin Footer-->
+    <div class="footer">
+      
+    </div>
+    <script src="../../js/jquery-2.2.0.min.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/nav.js"></script>
+  </body>
+
+</html>

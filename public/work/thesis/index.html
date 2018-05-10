@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thesis</title>
+    <link rel ="stylesheet" href="../../css/font-awesome.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../css/test.css" />
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-74784461-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+
+  <body>
+    <!--navigation-->
+    <nav id="navMenu" class="navbar-fixed-top navbar-default navbar-light bg-faded" role="navigation"></nav>
+
+    <!--intro panel-->
+    <div class="jumbotron thesis-jumbo">
+      <div class="container">
+        <h1>Thesis</h1>
+        <h2>How can we study Columbia University students’ use of New York City?</h2>
+        <span>Columbia University | August 2015 – May 2016</span>
+        <br>
+        <span class="roles-skills">Research Design | Web Scraping | Email Marketing | Quantitative Analysis | GIS | Python</span>
+      </div>
+    </div>
+
+
+    <!--info panel-->
+    <div class="work-info">
+      <p><em>Last updated: March 19, 2016</em></p>
+
+      <h1>"So, what's your thesis?"</h1>
+
+      <p>In the spring of my junior year, with two semesters left until graduation, I decided to change my major from Sustainable Development to Sociology. The biggest factor in that decision was an idea for a thesis I felt would be best executed within the Sociology department at Columbia. Almost exactly a year later, I can safely say that it was the right decision.</p>
+
+      <p>The basic idea of my thesis is to use Google Location Services data to study how students at Columbia University make use of New York City. More specifically, I am examining how a variety of factors affect that usage, such as having a job or receiving financial assistance from family.</p>
+
+      <p>I've been analyzing survey responses combined with Google Location Services data for this investigation, but before I get into that I need to explain how I recruited my respondents.</p>
+
+      <h1>Recruitment</h1>
+
+      <p>My first attempts at recruitment involved reaching out to student groups and asking for them to include a blurb in their listserv. I should have known better, because <strong>nobody reads student group listservs</strong>. I then tried to scrape student emails using Columbia's student directory, but that was an insane amount of server requests to make and it would take too long. After talking it over with some friends, I realized I could use Columbia's internal computer system (which every student has access to) to thoroughly and quickly get all of the public student information available. I brought my proof of concept to a friend that I had consulted with earlier, and after his <a href="https://github.com/fabiodesousa/cu-unis" target="_blank">improvements</a> we had a directory of every person at Columbia University, including all 8,000+ undergraduates.</p>
+
+      <p>I then randomly selected 1,000 students at a time and emailed them using Mailchimp. By making use of Mailchimp's A/B testing platform, I improved my recruitment effectiveness. I ended up reaching out to 8,000 students. Of those 8,000, almost 1,000 opened the survey, and 46 students ended up completing the survey and uploading their Google Location data. I was content with the result, because my study really asked each respondent to provide quite a bit of information.</p>
+
+      <h1>Data</h1>
+
+      <p>At the end of my recruitment, I had over 6 million coordinates. Each respondent also provided demographic information along with details about the semesters they spent on campus.</p>
+
+      <h2>The Survey</h2>
+
+      <p>When I was designing the survey, I had to balance getting all of the information I wanted and keeping it short enough for respondents to complete. I chose to ask for:</p>
+      <ul>
+        <li>Basic demographic information</li>
+        <li>Parental education and income</li>
+        <li>Which semesters they spent on campus</li>
+        <li>Whether or not they worked during each semester</li>
+        <li>Whether or not their family provided financial assistance during each semester</li>
+      </ul>
+
+      <p>I can look for relationships between these variables and spatial patterns. I am especially focused on identifying anything that limits the extent and frequency of student trips beyond campus.</p>
+
+      <h2>Wrangling</h2>
+
+      <p>Cleaning the data was a particularly interesting challenge. The data that respondents downloaded from their Google Takeout was a json file that I needed to convert to GeoJSON. By using the survey responses, I could eliminate all coordinates that were not taken during a semester when that respondent was on campus. I then determined which census tract each coordinate belonged to, which allows me to bring in census data in the future if need be.</p>
+
+      <p>This short description of the data wrangling process makes it seem as if it was pretty straightforward. However, every step of the way involved multiple failed attempts, Google searches, and lessons learned. I've heard that often the majority of data analysis is actually just preparing the data to be analyzed, and this experience reinforced that notion.</p>
+
+      <h2>Analysis</h2>
+
+      <p>As I examined the data, I realized that there was high variability from semester to semester for many of the respondents. This, along with the fact that I asked for information for each semester, made me decide to conduct my analysis on the semesters instead of the respondents. The resulting sample of 146 semesters also proved easier to work with than the smaller number of respondents.</p>
+
+      <p>I also decided to take some time to learn and set up my work in an iPython Notebook. The initial investment has paid off, as I can now iterate on, visualize, and share my analysis much more easily than I could from the command line.</p>
+
+      <h1>Preliminary Results</h1>
+
+      <p>I initially hypothesized that having to work or having no familial financial assistance would be a barrier to accessing the city. As measured by average distance from campus when a student was off campus, percentage of time spent off campus, and range of areas visited by the student, I seem to have been completely wrong. In fact, the opposite of my prediction seems to be true: Columbia University students who do not receive financial assistance from their families spend more time in more parts of the city than students who do.</p>
+
+      <p>While I am still working on this analysis and haven't had a chance to add figures to this write-up, I encourage you to take a look at the <a href="http://fabiodesousa.com/files/thesis_preliminary_analysis.pdf" target="_blank">PDF of the iPython notebook</a> in which I am doing this work.
+
+
+      <h3><a href="http://www.fabiodesousa.com/index.html#work">Back to my other projects.</a></h3>
+    </div>
+
+    <!--Begin Footer-->
+    <div class="footer">
+      
+    </div>
+    <script src="../../js/jquery-2.2.0.min.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/nav.js"></script>
+  </body>
+
+</html>
