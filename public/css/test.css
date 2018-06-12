@@ -21,10 +21,13 @@ body {
 .main-jumbo {
   background-image: url("../img/hero.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 90%;
+  background-size: cover;
+  background-position: right center;
 }
 
+.main-jumbo .container {
+  margin-left: 10vw;
+}
 
 .thesis-jumbo {
   background-color: #C85331;
@@ -77,7 +80,6 @@ body {
   margin-top: 10px;
 }
 
-
 a {
   color: #039f8f;
   text-decoration: none;
@@ -128,6 +130,7 @@ a:visited {
 
 
 .work-row {
+
 }
 
 .current-work-header {
@@ -149,6 +152,13 @@ a:visited {
   background-repeat: no-repeat;
 }
 
+.uptime-img {
+  background-image: url('../work/uptime/img/uptime.png');
+}
+
+.slack-status-img {
+  background-image: url('../work/slack-status/img/readme.png');
+}
 
 .ex-6 {
   background-image: url('https://media.giphy.com/media/KggqUqaHd0DTy/giphy.gif');
@@ -285,9 +295,9 @@ a:visited {
   }
 }
 
-@media (max-width: 768px) {
-    .main-jumbo {
-    background-position: 50%;
+@media (max-width: 860px) {
+  .main-jumbo {
+    background-position: center right -20px;
   }
 
   .work-info img {
