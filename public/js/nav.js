@@ -7,7 +7,7 @@ document.getElementById("navMenu").innerHTML =
     ' <span class = "icon-bar"></span>'+
     ' <span class = "icon-bar"></span>'+
   '</button>'+
-  '<a class = "navbar-brand" href = "http://fabiodesousa.com/index.html">Home<span class="sr-only"(current)</span></a>'+
+  '<a class = "navbar-brand" href = "http://fabiodesousa.com/">Home<span class="sr-only"(current)</span></a>'+
 '</div>'+
 '<div class = "collapse navbar-collapse">'+
 /*  '<ul class="nav navbar-nav pull-left">'+
